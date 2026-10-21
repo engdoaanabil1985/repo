@@ -6,3 +6,15 @@
   tasks:
     - name: Ping remote hosts
       ansible.builtin.ping:
+
+    - name: Create user
+      ansible.builtin.user:
+        name: test
+        comment: test user
+        uid: 1020
+        group: wheel
+      register: out
+
+    - name: Print output
+      ansible.builtin.debug:
+        var: out
