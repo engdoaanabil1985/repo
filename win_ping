@@ -1,0 +1,4 @@
+---
+- name: windows ping
+  hosts: all
+  win_ping:
