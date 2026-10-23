@@ -7,6 +7,6 @@
     - name: Ping remote hosts
       ansible.builtin.ping:
 
-    -name: print user
+    - name: print user
      debug:
        msg: "hello {{user_name}}"
