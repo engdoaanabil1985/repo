@@ -8,5 +8,5 @@
       ansible.builtin.ping:
 
     - name: print user
-     debug:
-       msg: "hello {{user_name}}"
+      debug:
+        msg: "hello {{user_name}}"
