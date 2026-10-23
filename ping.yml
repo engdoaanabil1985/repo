@@ -9,4 +9,4 @@
 
     -name: print user
      debug:
-       arg: "hello {{user_name}}"
+       msg: "hello {{user_name}}"
